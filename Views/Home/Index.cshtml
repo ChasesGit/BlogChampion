@@ -3,7 +3,7 @@
 @{
 
 }
-<h2> Home Page</h2>
+<h2 class="title">BlogChampion</h2>
 
 
 <div>
@@ -11,18 +11,19 @@
         @foreach(var post in Model)
         {
             <li>
-                <a asp-controller="Home" asp-action="Post" asp-route-id="@post.Id">
-                    @post.Title
+                
+                <a class="ViewClass" asp-controller="Home" asp-action="Post" asp-route-id="@post.Id">
+                    Read @post.Title
 
                 </a>
                 -
-                <a asp-controller="Home" asp-action="Change" asp-route-id="@post.Id">
-                    Edit
+                <a class="EditClass" asp-controller="Home" asp-action="Change" asp-route-id="@post.Id">
+                    Edit @post.Title
 
                 </a>
                 -
-                <a asp-controller="Home" asp-action="Remove" asp-route-id="@post.Id">
-                    Remove
+                <a class= "RemoveClass" asp-controller="Home" asp-action="Remove" asp-route-id="@post.Id">
+                    Remove @post.Title
 
                 </a>
             </li>

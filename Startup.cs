@@ -47,7 +47,7 @@ namespace BlogChampion
 			if(env.IsDevelopment()) { 
 				app.UseDeveloperExceptionPage();
 			}
-
+			app.UseStaticFiles();
 			app.UseAuthentication(); 
 
 			app.UseMvcWithDefaultRoute();
