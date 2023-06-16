@@ -1,12 +1,12 @@
 ﻿a {
-    color:black;
+    color:White;
     text-decoration: none;
 }
 a:hover {
     text-decoration:underline;
 }
 nav {
-    background-color:cornflowerblue;
+    background-color:darkslateblue;
     height:50px;
     width: 100%;
     text-align: center;
@@ -23,12 +23,12 @@ nav a {
     color:springgreen;
 }
 li {
-    color:darkseagreen;
+    color:black;
     position:relative;
     list-style-type:none;
 }
 a.ViewClass {
-    color:darkslateblue
+    color:cornflowerblue;
 }
 a.EditClass {
     color:darkseagreen;

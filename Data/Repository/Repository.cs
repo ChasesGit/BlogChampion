@@ -4,10 +4,13 @@ using System.Linq;
 
 namespace BlogChampion.Data.Repository
 {
+    //Used for connecting to our homecontroller and controlling our posts such as removing getting and upating. This is also where we made our boolean for how long our Changes take to update the website.
+    //We use async to free up the thread for other activies.
     public class Repository : IRepository
     {
+        
         private AppDbContext _context;
-
+        
         public Repository(AppDbContext context)
         {
             _context = context;
