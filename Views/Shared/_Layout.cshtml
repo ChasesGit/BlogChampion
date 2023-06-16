@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <div>
+            <a asp-controller="Home" asp-action="Index">Indexing</a>
+            <a asp-controller="Home" asp-action="Change">Make a post</a>
+        </div>
+        <div>
+            @RenderBody()
+        </div>
+
+
+    </nav>
+</body>
+</html>
